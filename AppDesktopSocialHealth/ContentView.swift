@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isLogin = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            if isLogin {
+                home_view(isLogin:$isLogin)
+            } else {
+                login_view(isLogin:$isLogin)
+            }
         }
-        .padding()
+        .onAppear {
+            isLogin = UserDefaults.standard.bool(forKey: "isLogin")
+        }
     }
 }
 
