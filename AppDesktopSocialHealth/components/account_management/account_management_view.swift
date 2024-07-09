@@ -14,7 +14,7 @@ struct account_management_view: View {
     @State var alertSureToDelete = false
     @State var alertDeleteSuccess = false
     @State var alertDeleteFail = false
-    @State private var selectedUser: User = User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0, createdAt: "", updatedAt: "")
+    @State private var selectedUser: User = User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0)
         @State private var isNavigationActive: Bool = false
     @State var isLoading = true
 
@@ -58,13 +58,13 @@ struct account_management_view: View {
                     .overlay{
                         VStack{
                             if isNew && isAdd {
-                                UserDetailView(user: User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0, createdAt: "", updatedAt: ""), isNew: $isNew, isAdd:$isAdd)
+                                UserDetailView(user: User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0), isNew: $isNew, isAdd:$isAdd)
                                     .onDisappear {
                                         model.users = []
                                         model.fetchAllUser { _ in }
                                     }
                             }else if !isNew && isAdd {
-                                UserDetailView(user: selectedUser ?? User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0, createdAt: "", updatedAt: ""), isNew: $isNew, isAdd:$isAdd)
+                                UserDetailView(user: selectedUser ?? User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0), isNew: $isNew, isAdd:$isAdd)
                                     .onDisappear {
                                         model.users = []
                                         model.fetchAllUser { _ in }
@@ -241,4 +241,3 @@ struct GridRowUser: View {
         selectedUser = user
     }
 }
-

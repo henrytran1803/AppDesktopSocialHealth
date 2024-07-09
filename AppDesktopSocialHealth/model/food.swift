@@ -25,6 +25,39 @@ struct Food: Codable {
     }
 }
 
+
+struct FoodCreate: Codable {
+    var name: String
+    var description: String
+    var calorie: Double
+    var protein: Double
+    var fat: Double
+    var carb: Double
+    var sugar: Double
+    var serving: Int
+    var photos: [Data]
+
+    
+    enum CodingKeys: String, CodingKey {
+        case name, description, calorie, protein, fat, carb, sugar, serving, photos
+    }
+}
+struct FoodUpdate: Codable {
+    var id: Int
+    var name: String
+    var description: String
+    var calorie: Double
+    var protein: Double
+    var fat: Double
+    var carb: Double
+    var sugar: Double
+    var serving: Int
+
+    
+    enum CodingKeys: String, CodingKey {
+        case id, name, description, calorie, protein, fat, carb, sugar, serving
+    }
+}
 struct Photo: Codable {
     var id: Int
     var photoType: String

@@ -9,7 +9,10 @@ import SwiftUI
 
 struct exersice_management_view: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      //  ImagePickerView()
+        HStack{
+            
+        }
     }
 }
 

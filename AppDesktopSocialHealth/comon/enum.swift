@@ -65,7 +65,10 @@ enum API {
     case getReminder(id: Int)
     case deleteReminder(id: Int)
     case getRemindersByUserId(userId: Int)
-
+    case deletePhotoById(photoId:Int)
+    case createPhoto
+    case createListPhoto
+    case updateFoodNonePhoto
     var path: String {
         switch self {
         case .register:
@@ -130,16 +133,24 @@ enum API {
             return "/v1/reminder"
         case .updateReminder(let id), .getReminder(let id), .deleteReminder(let id):
             return "/v1/reminder/\(id)"
+        case .deletePhotoById(let id):
+            return "/v1/food/photo/\(id)"
+        case .createPhoto:
+            return "/v1/food/photo"
+        case .createListPhoto:
+            return "/v1/food/photos"
+        case .updateFoodNonePhoto:
+            return "/v1/food"
         }
     }
 
     var method: String {
         switch self {
-        case .register, .login, .requestPasswordReset, .confirmPasswordReset, .createFood, .createExercise, .createUser, .createMeal, .createMealDetail, .createPost, .likePost, .createComment, .createSchedule, .createScheduleDetail, .createConversation, .sendMessage, .createReminder:
+        case .register, .login, .requestPasswordReset, .confirmPasswordReset, .createFood, .createExercise, .createUser, .createMeal, .createMealDetail, .createPost, .likePost, .createComment, .createSchedule, .createScheduleDetail, .createConversation, .sendMessage, .createReminder,.createPhoto, .createListPhoto:
             return "POST"
-        case .updateFood, .updateExercise, .updateUser, .updateMealDetail, .updatePost, .updateSchedule, .updateScheduleDetail, .updateReminder:
+        case .updateFood, .updateExercise, .updateUser, .updateMealDetail, .updatePost, .updateSchedule, .updateScheduleDetail, .updateReminder,.updateFoodNonePhoto:
             return "PUT"
-        case .deleteFood, .deleteExercise, .deleteUser, .deleteMeal, .deleteMealDetail, .deletePost, .deleteLike, .deleteSchedule, .deleteScheduleDetail, .deleteConversation, .deleteMessage, .deleteReminder:
+        case .deleteFood, .deleteExercise, .deleteUser, .deleteMeal, .deleteMealDetail, .deletePost, .deleteLike, .deleteSchedule, .deleteScheduleDetail, .deleteConversation, .deleteMessage, .deleteReminder,.deletePhotoById:
             return "DELETE"
         case .getListFood, .getFood, .getListExercise, .getExercise, .getAllUser, .getUser, .getMealsByUserId, .getMeal, .getAllPost, .getPost, .getAllComments, .getAllSchedule, .getSchedule, .listUserConversations, .listConversationMessages, .getReminder, .getRemindersByUserId:
             return "GET"

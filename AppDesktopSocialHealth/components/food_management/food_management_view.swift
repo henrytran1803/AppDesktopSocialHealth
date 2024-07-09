@@ -31,8 +31,8 @@ struct food_management_view: View {
                         .padding(.top, 20)
                     Spacer()
                     Button(action: {
-                        //                    isAdd = true
-                        //                    isNew = true
+                                            isAdd = true
+                                            isNew = true
                     }, label: {
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width: 110, height: 40)
@@ -49,38 +49,33 @@ struct food_management_view: View {
                             .foregroundColor(.purple)
                     })
                 }.padding()
-                RoundedRectangle(cornerRadius: 25)
-                    .overlay{
-                        VStack{
-                            //                        if isNew && isAdd {
-                            //                            UserDetailView(user: User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0, createdAt: "", updatedAt: ""), isNew: $isNew, isAdd:$isAdd)
-                            //                                .onDisappear {
-                            //                                    model.users = []
-                            //                                            model.fetchAllUser { _ in }
-                            //                                        }
-                            //                        }else if !isNew && isAdd {
-                            //                            UserDetailView(user: selectedUser ?? User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0, createdAt: "", updatedAt: ""), isNew: $isNew, isAdd:$isAdd)
-                            //                                .onDisappear {
-                            //                                    model.users = []
-                            //                                            model.fetchAllUser { _ in }
-                            //                                        }
-                            //                        }else{
-                            Divider()
-                            userGrid
-                                .font(.title2)
-                                .padding()
-                            Spacer()
-                            //                        }
+              
+                    RoundedRectangle(cornerRadius: 25)
+                        .overlay{
+                            VStack{
+                                if isNew && isAdd {
+                                    FoodDetailView(food: $selectedFood, isNew: $isNew, isAdd:$isAdd, model: model)
+                                }else if !isNew && isAdd {
+                                    FoodDetailView(food: $selectedFood, isNew: $isNew, isAdd:$isAdd,model: model)
+                                        
+                                }else{
+                                    foodGrid
+                                Divider()
+                                    .font(.title2)
+                                    .padding()
+                                Spacer()
+                                        }
+                            }
                         }
-                    }
-            
+                        .padding([.top, .leading], 50)
+                
                 .foregroundColor(.white)
                 .padding([.top, .leading] )
                 .background(Color.primaryy)
+                
                     .navigationTitle("Users")
                     .searchable(text: $searchText, prompt: "Look for something")
-            }
-
+                }
                     
         }.onAppear {isLoading = true
             model.fetchAllFood { success in
@@ -91,7 +86,7 @@ struct food_management_view: View {
             }
         }
     }
-    private var userGrid: some View {
+    private var foodGrid: some View {
         Grid (alignment:.leading){
             GridRow {
                 Text("ID")

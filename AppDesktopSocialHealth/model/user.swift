@@ -19,15 +19,11 @@ struct User: Codable {
     var calorie: Double
     var id: Int
     var status: Int
-    var createdAt: String
-    var updatedAt: String
-    var deletedAt: String?
+
 
     enum CodingKeys: String, CodingKey {
         case email, firstname, lastname, role, height, weight, bdf, tdee, calorie, id, status
-        case createdAt = "created_at"
-        case updatedAt = "updated_at"
-        case deletedAt = "deleted_at"
+ 
     }
 }
 

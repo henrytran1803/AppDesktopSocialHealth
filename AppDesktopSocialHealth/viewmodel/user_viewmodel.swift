@@ -8,7 +8,7 @@
 import Foundation
 class UserViewModel: ObservableObject {
     @Published var users : [User] = []
-    @Published var createUser:User = User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0, createdAt: "", updatedAt: "")
+    @Published var createUser:User = User(email: "", firstname: "", lastname: "", role: 0, height: 0, weight: 0, bdf: 0, tdee: 0, calorie: 0, id: 0, status: 0)
    
     func fetchAllUser(completion: @escaping (Bool) -> Void) {
         guard let token = UserDefaults.standard.string(forKey: "token") else {

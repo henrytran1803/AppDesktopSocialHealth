@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D201C2242C3A29E000EE9C00 /* image_viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D201C2232C3A29E000EE9C00 /* image_viewmodel.swift */; };
+		D201C2262C3A2A3E00EE9C00 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D201C2252C3A2A3E00EE9C00 /* ImagePickerView.swift */; };
+		D201C2282C3A2E3A00EE9C00 /* fooddetail_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D201C2272C3A2E3A00EE9C00 /* fooddetail_view.swift */; };
+		D201C22A2C3A3C6200EE9C00 /* photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D201C2292C3A3C6200EE9C00 /* photo.swift */; };
 		D21578182C38DE5E00C52670 /* customalertview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21578172C38DE5E00C52670 /* customalertview.swift */; };
 		D215781C2C38EA6800C52670 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D215781B2C38EA6800C52670 /* SideMenu.swift */; };
 		D215781E2C38EACC00C52670 /* main_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D215781D2C38EACC00C52670 /* main_view.swift */; };
@@ -53,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D201C2232C3A29E000EE9C00 /* image_viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_viewmodel.swift; sourceTree = "<group>"; };
+		D201C2252C3A2A3E00EE9C00 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		D201C2272C3A2E3A00EE9C00 /* fooddetail_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fooddetail_view.swift; sourceTree = "<group>"; };
+		D201C2292C3A3C6200EE9C00 /* photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photo.swift; sourceTree = "<group>"; };
 		D21578172C38DE5E00C52670 /* customalertview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customalertview.swift; sourceTree = "<group>"; };
 		D215781B2C38EA6800C52670 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		D215781D2C38EACC00C52670 /* main_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_view.swift; sourceTree = "<group>"; };
@@ -131,6 +139,7 @@
 				D2B32AAC2C3840F9009E0C56 /* login.swift */,
 				D215781F2C390D6B00C52670 /* user.swift */,
 				D21578252C39A89200C52670 /* food.swift */,
+				D201C2292C3A3C6200EE9C00 /* photo.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -141,6 +150,7 @@
 				D2B32AAE2C38410E009E0C56 /* login_viewmodel.swift */,
 				D21578212C390DCA00C52670 /* user_viewmodel.swift */,
 				D21578272C39A95300C52670 /* food_viewmodel.swift */,
+				D201C2232C3A29E000EE9C00 /* image_viewmodel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -149,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				D21578172C38DE5E00C52670 /* customalertview.swift */,
+				D201C2252C3A2A3E00EE9C00 /* ImagePickerView.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -201,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D250F4372C368B8400BC34F7 /* food_management_view.swift */,
+				D201C2272C3A2E3A00EE9C00 /* fooddetail_view.swift */,
 			);
 			path = food_management;
 			sourceTree = "<group>";
@@ -427,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D201C22A2C3A3C6200EE9C00 /* photo.swift in Sources */,
 				D250F4362C368B6200BC34F7 /* account_management_view.swift in Sources */,
 				D250F43C2C368BB600BC34F7 /* content_management_view.swift in Sources */,
 				D2B32AAD2C3840F9009E0C56 /* login.swift in Sources */,
@@ -441,6 +454,9 @@
 				D2B32AB12C38414B009E0C56 /* enum.swift in Sources */,
 				D21578182C38DE5E00C52670 /* customalertview.swift in Sources */,
 				D250F4342C368B5000BC34F7 /* register_view.swift in Sources */,
+				D201C2282C3A2E3A00EE9C00 /* fooddetail_view.swift in Sources */,
+				D201C2262C3A2A3E00EE9C00 /* ImagePickerView.swift in Sources */,
+				D201C2242C3A29E000EE9C00 /* image_viewmodel.swift in Sources */,
 				D250F4382C368B8400BC34F7 /* food_management_view.swift in Sources */,
 				D21578222C390DCA00C52670 /* user_viewmodel.swift in Sources */,
 				D250F4322C368B3A00BC34F7 /* login_view.swift in Sources */,
