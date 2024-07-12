@@ -27,9 +27,17 @@
 		D250F43A2C368B9C00BC34F7 /* exersice_management_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250F4392C368B9C00BC34F7 /* exersice_management_view.swift */; };
 		D250F43C2C368BB600BC34F7 /* content_management_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250F43B2C368BB600BC34F7 /* content_management_view.swift */; };
 		D250F43F2C3694A300BC34F7 /* home_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250F43E2C3694A300BC34F7 /* home_view.swift */; };
+		D27FB5D62C41827E0059E72A /* customtextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27FB5D52C41827E0059E72A /* customtextfield.swift */; };
+		D27FB5D82C41910B0059E72A /* custombutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27FB5D72C41910B0059E72A /* custombutton.swift */; };
+		D29EEF1A2C40157E00B26312 /* ws.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29EEF192C40157E00B26312 /* ws.swift */; };
+		D29EEF1D2C4015AC00B26312 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = D29EEF1C2C4015AC00B26312 /* Starscream */; };
+		D29EEF212C40164D00B26312 /* wss.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29EEF202C40164D00B26312 /* wss.swift */; };
 		D2B32AAD2C3840F9009E0C56 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B32AAC2C3840F9009E0C56 /* login.swift */; };
 		D2B32AAF2C38410E009E0C56 /* login_viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B32AAE2C38410E009E0C56 /* login_viewmodel.swift */; };
 		D2B32AB12C38414B009E0C56 /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B32AB02C38414B009E0C56 /* enum.swift */; };
+		D2E120552C3F65BF0009B128 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E120542C3F65BF0009B128 /* post.swift */; };
+		D2E120572C3F65CE0009B128 /* post_viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E120562C3F65CE0009B128 /* post_viewmodel.swift */; };
+		D2E120592C3F6AE50009B128 /* contentdetail_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E120582C3F6AE50009B128 /* contentdetail_view.swift */; };
 		D2EA70BB2C359AAD005CC9D1 /* AppDesktopSocialHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA70BA2C359AAD005CC9D1 /* AppDesktopSocialHealthApp.swift */; };
 		D2EA70BD2C359AAD005CC9D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA70BC2C359AAD005CC9D1 /* ContentView.swift */; };
 		D2EA70BF2C359AB2005CC9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2EA70BE2C359AB2005CC9D1 /* Assets.xcassets */; };
@@ -37,6 +45,9 @@
 		D2EA70CD2C359AB3005CC9D1 /* AppDesktopSocialHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA70CC2C359AB3005CC9D1 /* AppDesktopSocialHealthTests.swift */; };
 		D2EA70D72C359AB3005CC9D1 /* AppDesktopSocialHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA70D62C359AB3005CC9D1 /* AppDesktopSocialHealthUITests.swift */; };
 		D2EA70D92C359AB3005CC9D1 /* AppDesktopSocialHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA70D82C359AB3005CC9D1 /* AppDesktopSocialHealthUITestsLaunchTests.swift */; };
+		D2F134272C3E0E15000DB806 /* exersice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F134262C3E0E15000DB806 /* exersice.swift */; };
+		D2F134292C3E12B2000DB806 /* exersice_viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F134282C3E12B2000DB806 /* exersice_viewmodel.swift */; };
+		D2F1342B2C3E695B000DB806 /* exersice_detail_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1342A2C3E695B000DB806 /* exersice_detail_view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,9 +89,16 @@
 		D250F4392C368B9C00BC34F7 /* exersice_management_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exersice_management_view.swift; sourceTree = "<group>"; };
 		D250F43B2C368BB600BC34F7 /* content_management_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = content_management_view.swift; sourceTree = "<group>"; };
 		D250F43E2C3694A300BC34F7 /* home_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_view.swift; sourceTree = "<group>"; };
+		D27FB5D52C41827E0059E72A /* customtextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customtextfield.swift; sourceTree = "<group>"; };
+		D27FB5D72C41910B0059E72A /* custombutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custombutton.swift; sourceTree = "<group>"; };
+		D29EEF192C40157E00B26312 /* ws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ws.swift; sourceTree = "<group>"; };
+		D29EEF202C40164D00B26312 /* wss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wss.swift; sourceTree = "<group>"; };
 		D2B32AAC2C3840F9009E0C56 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		D2B32AAE2C38410E009E0C56 /* login_viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_viewmodel.swift; sourceTree = "<group>"; };
 		D2B32AB02C38414B009E0C56 /* enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
+		D2E120542C3F65BF0009B128 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
+		D2E120562C3F65CE0009B128 /* post_viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post_viewmodel.swift; sourceTree = "<group>"; };
+		D2E120582C3F6AE50009B128 /* contentdetail_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentdetail_view.swift; sourceTree = "<group>"; };
 		D2EA70B72C359AAD005CC9D1 /* AppDesktopSocialHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDesktopSocialHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EA70BA2C359AAD005CC9D1 /* AppDesktopSocialHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesktopSocialHealthApp.swift; sourceTree = "<group>"; };
 		D2EA70BC2C359AAD005CC9D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +110,9 @@
 		D2EA70D22C359AB3005CC9D1 /* AppDesktopSocialHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppDesktopSocialHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EA70D62C359AB3005CC9D1 /* AppDesktopSocialHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesktopSocialHealthUITests.swift; sourceTree = "<group>"; };
 		D2EA70D82C359AB3005CC9D1 /* AppDesktopSocialHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesktopSocialHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2F134262C3E0E15000DB806 /* exersice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exersice.swift; sourceTree = "<group>"; };
+		D2F134282C3E12B2000DB806 /* exersice_viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exersice_viewmodel.swift; sourceTree = "<group>"; };
+		D2F1342A2C3E695B000DB806 /* exersice_detail_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exersice_detail_view.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29EEF1D2C4015AC00B26312 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +162,8 @@
 				D215781F2C390D6B00C52670 /* user.swift */,
 				D21578252C39A89200C52670 /* food.swift */,
 				D201C2292C3A3C6200EE9C00 /* photo.swift */,
+				D2F134262C3E0E15000DB806 /* exersice.swift */,
+				D2E120542C3F65BF0009B128 /* post.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -151,6 +175,8 @@
 				D21578212C390DCA00C52670 /* user_viewmodel.swift */,
 				D21578272C39A95300C52670 /* food_viewmodel.swift */,
 				D201C2232C3A29E000EE9C00 /* image_viewmodel.swift */,
+				D2F134282C3E12B2000DB806 /* exersice_viewmodel.swift */,
+				D2E120562C3F65CE0009B128 /* post_viewmodel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -160,6 +186,8 @@
 			children = (
 				D21578172C38DE5E00C52670 /* customalertview.swift */,
 				D201C2252C3A2A3E00EE9C00 /* ImagePickerView.swift */,
+				D27FB5D52C41827E0059E72A /* customtextfield.swift */,
+				D27FB5D72C41910B0059E72A /* custombutton.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -171,6 +199,7 @@
 				D250F4242C36521C00BC34F7 /* Localizable.strings */,
 				D2B32AB02C38414B009E0C56 /* enum.swift */,
 				D215781B2C38EA6800C52670 /* SideMenu.swift */,
+				D29EEF192C40157E00B26312 /* ws.swift */,
 			);
 			path = comon;
 			sourceTree = "<group>";
@@ -221,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				D250F4392C368B9C00BC34F7 /* exersice_management_view.swift */,
+				D2F1342A2C3E695B000DB806 /* exersice_detail_view.swift */,
 			);
 			path = exersice_management;
 			sourceTree = "<group>";
@@ -229,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				D250F43B2C368BB600BC34F7 /* content_management_view.swift */,
+				D2E120582C3F6AE50009B128 /* contentdetail_view.swift */,
 			);
 			path = content_management;
 			sourceTree = "<group>";
@@ -238,6 +269,7 @@
 			children = (
 				D250F43E2C3694A300BC34F7 /* home_view.swift */,
 				D215781D2C38EACC00C52670 /* main_view.swift */,
+				D29EEF202C40164D00B26312 /* wss.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -320,6 +352,7 @@
 			);
 			name = AppDesktopSocialHealth;
 			packageProductDependencies = (
+				D29EEF1C2C4015AC00B26312 /* Starscream */,
 			);
 			productName = AppDesktopSocialHealth;
 			productReference = D2EA70B72C359AAD005CC9D1 /* AppDesktopSocialHealth.app */;
@@ -395,6 +428,7 @@
 			);
 			mainGroup = D2EA70AE2C359AAD005CC9D1;
 			packageReferences = (
+				D29EEF1B2C4015AB00B26312 /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
 			productRefGroup = D2EA70B82C359AAD005CC9D1 /* Products */;
 			projectDirPath = "";
@@ -441,24 +475,34 @@
 			files = (
 				D201C22A2C3A3C6200EE9C00 /* photo.swift in Sources */,
 				D250F4362C368B6200BC34F7 /* account_management_view.swift in Sources */,
+				D27FB5D82C41910B0059E72A /* custombutton.swift in Sources */,
+				D29EEF1A2C40157E00B26312 /* ws.swift in Sources */,
+				D2F134292C3E12B2000DB806 /* exersice_viewmodel.swift in Sources */,
+				D2E120552C3F65BF0009B128 /* post.swift in Sources */,
 				D250F43C2C368BB600BC34F7 /* content_management_view.swift in Sources */,
+				D2E120592C3F6AE50009B128 /* contentdetail_view.swift in Sources */,
 				D2B32AAD2C3840F9009E0C56 /* login.swift in Sources */,
 				D215781C2C38EA6800C52670 /* SideMenu.swift in Sources */,
 				D21578242C39563D00C52670 /* UserDetailView.swift in Sources */,
 				D21578262C39A89200C52670 /* food.swift in Sources */,
 				D21578282C39A95300C52670 /* food_viewmodel.swift in Sources */,
+				D2F134272C3E0E15000DB806 /* exersice.swift in Sources */,
+				D29EEF212C40164D00B26312 /* wss.swift in Sources */,
 				D21578202C390D6B00C52670 /* user.swift in Sources */,
 				D2B32AAF2C38410E009E0C56 /* login_viewmodel.swift in Sources */,
 				D250F43F2C3694A300BC34F7 /* home_view.swift in Sources */,
 				D2EA70BD2C359AAD005CC9D1 /* ContentView.swift in Sources */,
+				D2F1342B2C3E695B000DB806 /* exersice_detail_view.swift in Sources */,
 				D2B32AB12C38414B009E0C56 /* enum.swift in Sources */,
 				D21578182C38DE5E00C52670 /* customalertview.swift in Sources */,
 				D250F4342C368B5000BC34F7 /* register_view.swift in Sources */,
+				D2E120572C3F65CE0009B128 /* post_viewmodel.swift in Sources */,
 				D201C2282C3A2E3A00EE9C00 /* fooddetail_view.swift in Sources */,
 				D201C2262C3A2A3E00EE9C00 /* ImagePickerView.swift in Sources */,
 				D201C2242C3A29E000EE9C00 /* image_viewmodel.swift in Sources */,
 				D250F4382C368B8400BC34F7 /* food_management_view.swift in Sources */,
 				D21578222C390DCA00C52670 /* user_viewmodel.swift in Sources */,
+				D27FB5D62C41827E0059E72A /* customtextfield.swift in Sources */,
 				D250F4322C368B3A00BC34F7 /* login_view.swift in Sources */,
 				D2EA70BB2C359AAD005CC9D1 /* AppDesktopSocialHealthApp.swift in Sources */,
 				D215781E2C38EACC00C52670 /* main_view.swift in Sources */,
@@ -801,6 +845,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D29EEF1B2C4015AB00B26312 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D29EEF1C2C4015AC00B26312 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D29EEF1B2C4015AB00B26312 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2EA70AF2C359AAD005CC9D1 /* Project object */;
 }

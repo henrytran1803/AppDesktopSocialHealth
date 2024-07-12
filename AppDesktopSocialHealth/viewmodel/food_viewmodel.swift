@@ -104,7 +104,15 @@ class FoodViewModel: ObservableObject {
                     completion(false)
                     return
                 }
-                completion(true)
+                self.foods = []
+                self.fetchAllFood(){ success in
+                    if success {
+                        completion(true)
+                        
+                    }else {
+                        completion(false)
+                    }
+                }
                 
             }
         }
@@ -183,7 +191,18 @@ class FoodViewModel: ObservableObject {
                     completion(false)
                     return
                 }
-                completion(true)
+                
+                self.foods = []
+                self.fetchAllFood(){ success in
+                    if success {
+                        completion(true)
+                        
+                    }else {
+                        completion(false)
+                    }
+                }
+                
+                
             }
         }
         
@@ -228,7 +247,14 @@ class FoodViewModel: ObservableObject {
                     return
                 }
                 
-                completion(true)
+                if let index = self.foods.firstIndex(where: { $0.id == food.id }) {
+                  self.foods.remove(at: index)
+                  completion(true)
+              } else {
+                  print("Không tìm thấy Exersice trong danh sách")
+                  completion(false)
+              }
+
             }
         }
         

@@ -19,8 +19,10 @@ struct account_management_view: View {
     @State var isLoading = true
 
     var body: some View {
-        VStack {
-            
+        VStack(alignment: .center){
+            if isLoading {
+                ProgressView()
+            }else {
             HStack{
                 Text("User List")
                     .font(.title)
@@ -33,6 +35,7 @@ struct account_management_view: View {
                     isNew = true
                 }, label: {
                     RoundedRectangle(cornerRadius: 10)
+                        .stroke( Color.white,lineWidth: 3)
                         .frame(width: 110, height: 40)
                         .overlay{
                             HStack{
@@ -44,17 +47,16 @@ struct account_management_view: View {
                                     .font( .title)
                             }
                         }
-                        .foregroundColor(.purple)
+                        .foregroundColor(.clear)
                 })
             }.padding()
                 .alert("Bạn có chắc muốn enable \(selectedUser.id)", isPresented: $alertSureToDelete) {
                     Button("OK", role: .destructive) { }
                     Button("Cancel", role: .cancel) { }
                 }
-            if isLoading {
-                ProgressView()
-            }else {
+            
                 RoundedRectangle(cornerRadius: 25)
+                    .stroke(Color.white.opacity(0.5), lineWidth: 2)
                     .overlay{
                         VStack{
                             if isNew && isAdd {
@@ -78,7 +80,7 @@ struct account_management_view: View {
                             }
                         }
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(.clear)
                     .padding([.top, .leading] )
                     .alert(NSLocalizedString("Are you sure to delete \(selectedUser.id)", comment: ""), isPresented: $alertSureToDelete) {
                         Button("OK", role: .destructive) {
@@ -103,7 +105,7 @@ struct account_management_view: View {
                             
                         }
                     }
-            .background(Color.primaryy)
+            .background(Color.clear)
                 .navigationTitle("Users")
                 .searchable(text: $searchText, prompt: "Look for something")
         }
@@ -125,22 +127,22 @@ struct account_management_view: View {
             GridRow {
                 Text("ID")
                     .font(.headline)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.white)
                 Text("First Name")
                     .font(.headline)
-                    .foregroundColor(.green)
+                    .foregroundColor(.white)
                 Text("Last Name")
                     .font(.headline)
-                    .foregroundColor(.orange)
+                    .foregroundColor(.white)
                 Text("Email")
                     .font(.headline)
-                    .foregroundColor(.purple)
+                    .foregroundColor(.white)
                 Text("Status")
                     .font(.headline)
-                    .foregroundColor(.red)
+                    .foregroundColor(.white)
                 Text("Action")
                     .font(.headline)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                 
             }.font(.title)
                 .bold()
@@ -153,7 +155,7 @@ struct account_management_view: View {
                     isNavigationActive = true
                 }) {
                     GridRowUser(user: user, selectedUser: $selectedUser, isNew: $isNew, isAdd: $isAdd,alertSureToDelete: $alertSureToDelete)
-                        .background(user.status == 1 ? Color.red.opacity(0.3) : Color.clear)
+                        .background(user.status == 1 ? Color.red.opacity(0.1) : Color.clear)
                         .cornerRadius(8)
                     
                 }
@@ -182,16 +184,16 @@ struct GridRowUser: View {
     var body: some View {
         HStack {
             Text("\(user.id)")
-                .foregroundColor(.blue)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(user.firstname)
-                .foregroundColor(.green)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(user.lastname)
-                .foregroundColor(.orange)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(user.email)
-                .foregroundColor(.purple)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(user.status == 0 ? "Active": "Suspend")
                 .foregroundColor(.white)

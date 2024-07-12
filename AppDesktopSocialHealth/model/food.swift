@@ -17,7 +17,7 @@ struct Food: Codable {
     var carb: Double
     var sugar: Double
     var serving: Int
-    var photos: [Photo]
+    var photos: [PhotoFood]
 
     
     enum CodingKeys: String, CodingKey {
@@ -58,7 +58,7 @@ struct FoodUpdate: Codable {
         case id, name, description, calorie, protein, fat, carb, sugar, serving
     }
 }
-struct Photo: Codable {
+struct PhotoFood: Codable {
     var id: Int
     var photoType: String
     var image: Data?

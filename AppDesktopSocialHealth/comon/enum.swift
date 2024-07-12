@@ -69,6 +69,7 @@ enum API {
     case createPhoto
     case createListPhoto
     case updateFoodNonePhoto
+    case updateExersiceNonePhoto
     var path: String {
         switch self {
         case .register:
@@ -141,6 +142,8 @@ enum API {
             return "/v1/food/photos"
         case .updateFoodNonePhoto:
             return "/v1/food"
+        case .updateExersiceNonePhoto:
+            return "/v1/exersice"
         }
     }
 
@@ -148,7 +151,7 @@ enum API {
         switch self {
         case .register, .login, .requestPasswordReset, .confirmPasswordReset, .createFood, .createExercise, .createUser, .createMeal, .createMealDetail, .createPost, .likePost, .createComment, .createSchedule, .createScheduleDetail, .createConversation, .sendMessage, .createReminder,.createPhoto, .createListPhoto:
             return "POST"
-        case .updateFood, .updateExercise, .updateUser, .updateMealDetail, .updatePost, .updateSchedule, .updateScheduleDetail, .updateReminder,.updateFoodNonePhoto:
+        case .updateFood, .updateExercise, .updateUser, .updateMealDetail, .updatePost, .updateSchedule, .updateScheduleDetail, .updateReminder,.updateFoodNonePhoto,.updateExersiceNonePhoto:
             return "PUT"
         case .deleteFood, .deleteExercise, .deleteUser, .deleteMeal, .deleteMealDetail, .deletePost, .deleteLike, .deleteSchedule, .deleteScheduleDetail, .deleteConversation, .deleteMessage, .deleteReminder,.deletePhotoById:
             return "DELETE"

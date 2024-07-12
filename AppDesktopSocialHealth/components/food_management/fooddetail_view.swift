@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FoodDetailView: View {
-    @Binding var food : Food
+    @State var food : Food
     @Binding var isNew :Bool
     @Binding var isAdd :Bool
     @ObservedObject var modelImage = ImagePickerViewModel()
@@ -22,68 +22,65 @@ struct FoodDetailView: View {
         VStack{
             HStack{
                 VStack {
-                    HStack {
-                        Text("ID")
-                        TextField("ID", value: $food.id, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    CustomTextField(text: Binding(
+                        get: { "\(food.id)" },
+                        set: { food.id = Int($0) ?? 0 }
+                    ), placeholder: "ID")
+                    
                 }.padding()
                 VStack {
-                    HStack {
-                        Text("Name")
-                        TextField("Email", text: $food.name)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                        CustomTextField(text: $food.name
+                        , placeholder: "Name")
+                }.padding()
+            }
+            HStack{
+                VStack {
+                    CustomTextField(text: $food.description
+                    , placeholder: "description")
+                   
+                }.padding()
+                VStack {
+                    CustomTextField(text: Binding(
+                        get: { "\(food.calorie)" },
+                        set: { food.calorie = Double($0) ?? 0 }
+                    ), placeholder: "calorie")
+                   
                 }.padding()
                 
             }
             HStack{
                 VStack {
-                    HStack {
-                        Text("description")
-                        TextField("description", text: $food.description)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    CustomTextField(text: Binding(
+                        get: { "\(food.protein)" },
+                        set: { food.protein = Double($0) ?? 0 }
+                    ), placeholder: "protein")
+                    
+                   
                 }.padding()
                 VStack {
-                    HStack {
-                        Text("calorie")
-                        TextField("calorie", value: $food.calorie, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
-                }.padding()
-                
-            }
-            HStack{
-                VStack {
-                    HStack {
-                        Text("protein")
-                        TextField("protein", value: $food.protein, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
-                }.padding()
-                VStack {
-                    HStack {
-                        Text("fat")
-                        TextField("fat", value: $food.fat, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    CustomTextField(text: Binding(
+                        get: { "\(food.fat)" },
+                        set: { food.fat = Double($0) ?? 0 }
+                    ), placeholder: "fat")
                 }.padding()
                 
             }
             HStack{
                 VStack {
-                    HStack {
-                        Text("carb")
-                        TextField("carb", value: $food.carb, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    CustomTextField(text: Binding(
+                        get: { "\(food.carb)" },
+                        set: { food.carb = Double($0) ?? 0 }
+                    ), placeholder: "carb")
+                    
+                  
                 }.padding()
                 VStack {
                     HStack {
-                        Text("serving")
-                        TextField("serving", value: $food.serving, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
+                        CustomTextField(text: Binding(
+                            get: { "\(food.serving)" },
+                            set: { food.serving = Int($0) ?? 0 }
+                        ), placeholder: "serving")
+                        
                     }
                 }.padding()
             }
@@ -117,17 +114,13 @@ struct FoodDetailView: View {
                     ImagePickerView(viewModel: modelImage)
                 }
             HStack{
-                Button(action: {cancel()}, label: {
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 100, height: 50)
-                        .foregroundColor(.pink)
-                        .overlay{
-                            Text("CANCEL")
-                                .font( .title)
-                                .foregroundColor(.white)
-                        }
-                }).padding()
-                Button(action: {
+                SecondaryButton(action: {
+                    cancel()
+                }, title: "CANCEL")
+                .padding()
+                
+                
+                PrimaryButton(action: {
                     
                     if food.name.isEmpty {
                         alertEmpty = true
@@ -161,15 +154,12 @@ struct FoodDetailView: View {
                                 }
                             }
                         }else {
-                            
-                            
                             model.FoodUpdate(food: FoodUpdate(id: food.id, name: food.name, description: food.description, calorie: food.calorie, protein: food.protein, fat: food.fat, carb: food.carb, sugar: food.sugar, serving: food.serving)){
                                 success in
                                 if success {
                                     if modelImage.selectedImages.count == 1 {
                                         if let imageData = modelImage.selectedImages[0].tiffRepresentation {
                                             let photo = PhotoBase(photo_type: "1", image: imageData, url: "", dish_id: "\(food.id)")
-                                            
                                             modelImage.createPhoto(photo: photo) { success in
                                                 if success {
                                                     print("success")
@@ -213,16 +203,7 @@ struct FoodDetailView: View {
                             }
                         }
                     }
-                }, label: {
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 100, height: 50)
-                        .foregroundColor(.green)
-                        .overlay{
-                            Text("SAVE")
-                                .font( .title)
-                                .foregroundColor(.white)
-                        }
-                }).padding()
+                }, title: isAdd ? "EDIT": "ADD")
             }
             .alert(NSLocalizedString("error.empty", comment: ""), isPresented: $alertEmpty) {
                         Button("OK", role: .cancel) { }

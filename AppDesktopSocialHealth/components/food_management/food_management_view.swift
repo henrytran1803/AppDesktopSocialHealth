@@ -16,10 +16,9 @@ struct food_management_view: View {
     @State var alertDeleteSuccess = false
     @State var alertDeleteFail = false
     @State var isLoading = true
-
-    @State var selectedFood = Food(id: 0, name: "", description: "", calorie: 0, protein: 0, fat: 0, carb: 0, sugar: 0, serving: 0, photos: [Photo(id: 0, photoType: "", image: Data(), url: "", dishId: "")])
+    @State var selectedFood = Food(id: 0, name: "", description: "", calorie: 0, protein: 0, fat: 0, carb: 0, sugar: 0, serving: 0, photos: [PhotoFood(id: 0, photoType: "", image: Data(), url: "", dishId: "")])
     var body: some View {
-        VStack{
+        VStack(alignment: .center){
             if isLoading {
                 ProgressView()
             } else {
@@ -31,10 +30,11 @@ struct food_management_view: View {
                         .padding(.top, 20)
                     Spacer()
                     Button(action: {
-                                            isAdd = true
-                                            isNew = true
+                            isAdd = true
+                            isNew = true
                     }, label: {
                         RoundedRectangle(cornerRadius: 10)
+                            .stroke( Color.white,lineWidth: 3)
                             .frame(width: 110, height: 40)
                             .overlay{
                                 HStack{
@@ -46,20 +46,23 @@ struct food_management_view: View {
                                         .font( .title)
                                 }
                             }
-                            .foregroundColor(.purple)
+                            .foregroundColor(.clear)
                     })
                 }.padding()
               
                     RoundedRectangle(cornerRadius: 25)
+                    .stroke(Color.white.opacity(0.5), lineWidth: 2)
+
                         .overlay{
                             VStack{
                                 if isNew && isAdd {
-                                    FoodDetailView(food: $selectedFood, isNew: $isNew, isAdd:$isAdd, model: model)
+                                    FoodDetailView(food: Food(id: 0, name: "", description: "", calorie: 0, protein: 0, fat: 0, carb: 0, sugar: 0, serving: 0, photos: [PhotoFood(id: 0, photoType: "", image: Data(), url: "", dishId: "")]), isNew: $isNew, isAdd:$isAdd, model: model)
                                 }else if !isNew && isAdd {
-                                    FoodDetailView(food: $selectedFood, isNew: $isNew, isAdd:$isAdd,model: model)
+                                    FoodDetailView(food: selectedFood, isNew: $isNew, isAdd:$isAdd,model: model)
                                         
                                 }else{
                                     foodGrid
+                                        .padding()
                                 Divider()
                                     .font(.title2)
                                     .padding()
@@ -68,15 +71,36 @@ struct food_management_view: View {
                             }
                         }
                         .padding([.top, .leading], 50)
-                
-                .foregroundColor(.white)
+                        .foregroundColor(.clear)
                 .padding([.top, .leading] )
-                .background(Color.primaryy)
-                
+                .background(Color.clear)
                     .navigationTitle("Users")
                     .searchable(text: $searchText, prompt: "Look for something")
+                    .alert(NSLocalizedString("Are you sure to delete \(selectedFood.id)", comment: ""), isPresented: $alertSureToDelete) {
+                        Button("OK", role: .destructive) {
+                            model.DeleteFoodById(food:selectedFood ){
+                                sucess in
+                                if sucess {
+                                    alertDeleteSuccess = false
+                                }else {
+                                    alertDeleteFail = false
+                                }
+                            }
+                        }
+                    }
+                    .alert(NSLocalizedString("Delete success", comment: ""), isPresented: $alertDeleteSuccess) {
+                        Button("OK", role: .cancel) {
+                            model.foods = []
+                            model.fetchAllFood() { _ in }
+                        }
+                    }
+                    .alert(NSLocalizedString("Delete fail", comment: ""), isPresented: $alertDeleteFail) {
+                        Button("OK", role: .cancel) {
+                            
+                        }
+                    }
                 }
-                    
+                
         }.onAppear {isLoading = true
             model.fetchAllFood { success in
                 if success {
@@ -91,19 +115,19 @@ struct food_management_view: View {
             GridRow {
                 Text("ID")
                     .font(.headline)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.white)
                 Text("Name")
                     .font(.headline)
-                    .foregroundColor(.green)
+                    .foregroundColor(.white)
                 Text("calorie")
                     .font(.headline)
-                    .foregroundColor(.orange)
+                    .foregroundColor(.white)
                 Text("serving")
                     .font(.headline)
-                    .foregroundColor(.purple)
+                    .foregroundColor(.white)
                 Text("Action")
                     .font(.headline)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
             }.font(.title)
                 .bold()
             
@@ -136,16 +160,16 @@ struct GridRowFood: View {
     var body: some View {
         HStack {
             Text("\(food.id)")
-                .foregroundColor(.blue)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(food.name)
-                .foregroundColor(.green)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text("\(food.calorie)")
-                .foregroundColor(.orange)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text("\(food.serving)")
-                .foregroundColor(.purple)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             HStack{
@@ -164,8 +188,7 @@ struct GridRowFood: View {
                 })
                 Button(action: {
                     alertSureToDelete = true
-                    
-//                    selectedUser = food
+                    selectedFood = food
                     
                 }, label: {
                     RoundedRectangle(cornerRadius: 5)

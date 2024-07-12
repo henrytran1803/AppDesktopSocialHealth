@@ -56,8 +56,7 @@ class ImagePickerViewModel: ObservableObject {
                     completion(false)
                     return
                 }
-                print(data)
-                print(response)
+          
                 guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
                     print("Invalid response from server")
                     completion(false)

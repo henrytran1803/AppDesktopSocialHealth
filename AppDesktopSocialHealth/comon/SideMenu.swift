@@ -17,7 +17,7 @@ struct SideMenu: View {
                 Text("Health")
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .kerning(1.5)
                 Text("Fit")
                     .font(.title3)
@@ -35,10 +35,10 @@ struct SideMenu: View {
             Text("Welcome Admin!")
                 .font(.title2)
                 .bold()
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.white)
             VStack{
                 TabButton(image: "home", title: "Home", animation: animation, currentTab: $currentTab)
-                TabButton(image: "account", title: "Accounts", animation: animation, currentTab: $currentTab)
+                TabButton(image: "post", title: "Accounts", animation: animation, currentTab: $currentTab)
                 TabButton(image: "food", title: "Foods", animation: animation, currentTab: $currentTab)
                 TabButton(image: "exersice", title: "Exersices", animation: animation, currentTab: $currentTab)
                 TabButton(image: "content", title: "Contents", animation: animation, currentTab: $currentTab)
@@ -49,23 +49,20 @@ struct SideMenu: View {
                     HStack(spacing: 15){
                         Image(systemName:"infinity.circle" )
                             .font(.title2)
-                            .foregroundColor( Color.blue )
+                            .foregroundColor( Color.white )
                         Text("Logout")
                             .kerning(1.2)
-                            .foregroundColor( Color.black )
+                            .foregroundColor( Color.white )
                     }.padding(.leading, 5)
                 })
                 .padding(.vertical,12)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color.white)
+                .background(Color.clear)
                 .contentShape(Rectangle())
             }
             .padding(.leading, 20)
-            .offset(x: 15)
             .padding(.top,20)
-            Spacer()
-        }.frame(width: 210)
-        
+        }
     }
 }
 
@@ -81,19 +78,21 @@ struct TabButton :View {
             }
         }, label: {
             HStack(spacing: 15){
-        
-//                Image(systemName:currentTab == title ? image : "\(image).fill" )
-//                    .font(.title2)
-//                    .foregroundColor(currentTab == title ?   Color.white : Color.primaryy )
+                Image(currentTab == title ? "\(image).fill" : image)
+                    .resizable()
+                    .scaledToFit()
+                .frame(width: 24, height: 24)
                 Text(title)
                     .kerning(1.2)
-                    .foregroundColor(currentTab == title ?   Color.white : Color.black )
+                    .foregroundColor(currentTab == title ?   Color.white : Color.white )
             }.padding(.leading, 5)
         })
         .padding(.vertical,12)
         .frame(maxWidth: .infinity, alignment: .leading)
         .cornerRadius(5)
-        .background(currentTab == title ? Color.primaryy :Color.white)
+        .background(currentTab == title ? Color.gray.opacity(0.3) :Color.clear)
         .contentShape(Rectangle())
+        .cornerRadius(15)
+        .padding(.trailing)
     }
 }

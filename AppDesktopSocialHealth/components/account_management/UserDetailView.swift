@@ -30,92 +30,90 @@ struct UserDetailView: View {
         VStack{
             HStack{
                 VStack {
-                    HStack {
-                        Text("ID")
-                        TextField("ID", value: $user.id, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    CustomTextField(text: Binding(
+                        get: { "\(user.id)" },
+                        set: { user.id = Int($0) ?? 0 }
+                    ), placeholder: "ID")
+                    
                 }.padding()
                 VStack {
-                    HStack {
-                        Text("Email")
-                        TextField("Email", text: $user.email)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    CustomTextField(text: $user.email
+                    , placeholder: "Email")
+                    
                 }.padding()
                 
             }
             HStack{
                 VStack {
-                    HStack {
-                        Text("Fist name")
-                        TextField("Fist name", text: $user.firstname)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    
+                    CustomTextField(text: $user.firstname
+                    , placeholder: "Fist name")
+
                 }.padding()
                 VStack {
-                    HStack {
-                        Text("Last name")
-                        TextField("Last name", text: $user.lastname)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
-                }.padding()
-            }
-            HStack{
-                VStack {
-                    HStack {
-                        Text("Height")
-                        TextField("Height", value: $user.height, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
-                }.padding()
-                VStack {
-                    HStack {
-                        Text("Weight")
-                        TextField("Weight",  value: $user.weight, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    
+                    
+                    CustomTextField(text: $user.lastname
+                    , placeholder: "Last name")
+                    
                 }.padding()
             }
             HStack{
                 VStack {
-                    HStack {
-                        Text("BDF")
-                        TextField("BDF", value: $user.bdf, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    
+                    CustomTextField(text: Binding(
+                        get: { "\(user.height)" },
+                        set: { user.height = Double($0) ?? 0 }
+                    ), placeholder: "Height")
+                    
                 }.padding()
                 VStack {
-                    HStack {
-                        Text("TDEE")
-                        TextField("TDEE", value: $user.tdee, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    CustomTextField(text: Binding(
+                        get: { "\(user.weight)" },
+                        set: { user.weight = Double($0) ?? 0 }
+                    ), placeholder: "Weight")
+                    
                 }.padding()
             }
             HStack{
                 VStack {
-                    HStack {
-                        Text("Calorie")
-                        TextField("Calorie", value: $user.calorie, formatter: UserDetailView.numberFormater)
-                            .textFieldStyle(KuteTextFieldStyle())
-                    }
+                    
+                    CustomTextField(text: Binding(
+                        get: { "\(user.bdf)" },
+                        set: { user.bdf = Double($0) ?? 0 }
+                    ), placeholder: "BDF")
+                    
+                    
+                }.padding()
+                VStack {
+                    
+                    CustomTextField(text: Binding(
+                        get: { "\(user.tdee)" },
+                        set: { user.tdee = Double($0) ?? 0 }
+                    ), placeholder: "TDEE")
+                    
+                }.padding()
+            }
+            HStack{
+                VStack {
+                    
+                    CustomTextField(text: Binding(
+                        get: { "\(user.calorie)" },
+                        set: { user.calorie = Double($0) ?? 0 }
+                    ), placeholder: "Calorie")
+                   
                 }.padding()
 
             }
 Spacer()
             HStack{
-                Button(action: {cancel()}, label: {
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 100, height: 50)
-                        .foregroundColor(.pink)
-                        .overlay{
-                            Text("CANCEL")
-                                .font( .title)
-                                .foregroundColor(.white)
-                        }
-                }).padding()
-                Button(action: {
+                SecondaryButton(action: {
+                    cancel()
+                }, title: "CANCEL")
+                .padding()
+                
+                
+                PrimaryButton(action: {
                     if user.email.isEmpty || user.firstname.isEmpty || user.lastname.isEmpty {
                         alertEmpty = true
                     }else {
@@ -139,16 +137,7 @@ Spacer()
                             }
                         }
                     }
-                }, label: {
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 100, height: 50)
-                        .foregroundColor(.green)
-                        .overlay{
-                            Text("SAVE")
-                                .font( .title)
-                                .foregroundColor(.white)
-                        }
-                }).padding()
+                }, title: isAdd ? "EDIT": "ADD")
                 
                 .alert(NSLocalizedString("error.empty", comment: ""), isPresented: $alertEmpty) {
                             Button("OK", role: .cancel) { }
