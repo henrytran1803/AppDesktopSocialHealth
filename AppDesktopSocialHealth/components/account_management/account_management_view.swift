@@ -155,8 +155,9 @@ struct account_management_view: View {
                     isNavigationActive = true
                 }) {
                     GridRowUser(user: user, selectedUser: $selectedUser, isNew: $isNew, isAdd: $isAdd,alertSureToDelete: $alertSureToDelete)
-                        .background(user.status == 1 ? Color.red.opacity(0.1) : Color.clear)
+//                        .background(user.status == 1 ? Color.red.opacity(0.1) : Color.clear)
                         .cornerRadius(8)
+                        .foregroundColor(.clear)
                     
                 }
             }
@@ -195,39 +196,41 @@ struct GridRowUser: View {
             Text(user.email)
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
+            HStack{
+            Text("•")
+                    .bold()
+                    .font(.system(size: 40))
+                    .foregroundColor(user.status == 0 ?Color.green: Color.red)
             Text(user.status == 0 ? "Active": "Suspend")
-                .foregroundColor(.white)
-                .cornerRadius(5)
-                .background(user.status == 0 ?Color.green: Color.red)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(user.status == 0 ?Color.green: Color.red)
+                
+        }.frame(maxWidth: .infinity, alignment: .leading)
             HStack{
                 Button(action: {
                     
                     edit()
                     
                 }, label: {
-                    RoundedRectangle(cornerRadius: 5)
-                        .frame(width: 50, height: 30)
-                        .overlay{
-                            Text("Sửa")
-                                .foregroundColor(.white)
-                        }
-                        .foregroundColor(.orange)
+                   
+                            Image("edit")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30)
                 })
+                .buttonStyle(PlainButtonStyle())
+               
                 Button(action: {
                     alertSureToDelete = true
-                    
                     selectedUser = user
                     
                 }, label: {
-                    RoundedRectangle(cornerRadius: 5)
-                        .frame(width: 50, height: 30)
-                        .overlay{
-                            Text("Xoá")
-                                .foregroundColor(.white)
-                        }
-                        .foregroundColor(.red)
+                            Image("delete")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30)
                 })
+                .buttonStyle(PlainButtonStyle())
+                .padding(.leading)
             }.frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(.vertical, 5)

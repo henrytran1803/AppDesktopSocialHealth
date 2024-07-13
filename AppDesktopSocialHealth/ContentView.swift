@@ -14,6 +14,8 @@ struct ContentView: View {
         Group {
             if isLogin {
                 home_view(isLogin:$isLogin)
+                   
+                
             } else {
                 login_view(isLogin:$isLogin)
             }

@@ -15,37 +15,20 @@ struct contentdetail_view: View {
         
         VStack{
             HStack {
-                
-                
-                
-                
-                Text("ID")
-                Text("\(post.id)")
-                Text("ID")
-                Text("\(post.user_id)")
-                Spacer()
-                
-            }
-            HStack {
-                Text("ID")
-                Text(post.title)
-                    .lineLimit(5)
-                    .multilineTextAlignment(.center)
-                    .padding()
-            }
-            HStack {
-                Text("ID")
-                Text(post.body)
-                    .lineLimit(5)
-                    .multilineTextAlignment(.center)
-                    .padding()
+                CustomText(text: .constant("\(post.id)"), placeholder:"ID" )
                 Spacer()
             }
             HStack {
-                Text("\(post.count_likes)")
-                Text("ID")
-                Text("\(post.count_comments)")
+                CustomText(text: .constant("\(post.title)"), placeholder:"Title" )
+            }
+            HStack {
+                
+                CustomText(text: .constant("\(post.body)"), placeholder:"Body" )
                 Spacer()
+            }
+            HStack {
+                CustomText(text: .constant("\(post.count_likes)"), placeholder:"Count likes" )
+                CustomText(text: .constant("\(post.count_comments)"), placeholder:"Count comment" )
             }
            
             

@@ -153,14 +153,13 @@ struct GridRowPost: View {
                     selectedExersice = post
                     isDetail = true
                 }, label: {
-                    RoundedRectangle(cornerRadius: 5)
-                        .frame(width: 50, height: 30)
-                        .overlay{
-                            Text("Sửa")
-                                .foregroundColor(.white)
-                        }
-                        .foregroundColor(.orange)
-                })
+                    Image("edit")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+        })
+        .buttonStyle(PlainButtonStyle())
+        .padding(.leading)
                 Spacer()
             }
             

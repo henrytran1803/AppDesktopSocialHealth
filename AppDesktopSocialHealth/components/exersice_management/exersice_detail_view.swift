@@ -18,6 +18,10 @@ struct exersice_detail_view: View {
     @State var alertCreatefail = false
     @State var alertCreateSuccess = false
     @State var alertEmpty = false
+    
+    @State private var selectedExersiceId: Int? = nil
+
+    
     var body: some View {
         VStack{
             HStack{
@@ -67,12 +71,8 @@ struct exersice_detail_view: View {
                 
             }
             HStack{
-                VStack {
-                    
-                    CustomTextField(text: $exersice.exersice_type.name
-                    , placeholder: "Type")
-                    
-                }.padding()
+                PickerTypeCustom(exs: $model.exersicesType, selectedEx: $selectedExersiceId)
+                    .padding()
                
             }
                 HStack{
@@ -104,6 +104,8 @@ struct exersice_detail_view: View {
                     }
                     ImagePickerView(viewModel: modelImage)
                 }
+          
+            
             HStack{
            
                 
@@ -133,9 +135,10 @@ struct exersice_detail_view: View {
                                 calorie: exersice.calorie,
                                 rep_serving: exersice.rep_serving, 
                                 time_serving: exersice.time_serving,
-                                exersice_type: 1,
+                                exersice_type: selectedExersiceId ?? 1,
                                 image: photos
                             )
+                            print(exersiceCreate)
                             model.createExersice(exersice: exersiceCreate) { success in
                                 if success {
                                     alertCreateSuccess = true
@@ -146,7 +149,7 @@ struct exersice_detail_view: View {
                         }else {
                             
                             
-                            model.updateExersice(exersice: ExersiceUpdate(id: exersice.id, name: exersice.name, description: exersice.description, calorie: exersice.calorie,rep_serving: exersice.rep_serving, time_serving: exersice.time_serving, exersice_type: exersice.exersice_type.id)){
+                            model.updateExersice(exersice: ExersiceUpdate(id: exersice.id, name: exersice.name, description: exersice.description, calorie: exersice.calorie,rep_serving: exersice.rep_serving, time_serving: exersice.time_serving, exersice_type: selectedExersiceId  ?? exersice.exersice_type.id)){
                                 success in
                                 if success {
                                     if modelImage.selectedImages.count == 1 {
@@ -196,7 +199,7 @@ struct exersice_detail_view: View {
                             }
                         }
                     }
-                }, title: isAdd ? "EDIT": "ADD")
+                }, title: isNew ? "ADD": "EDIT")
                 
                 
             }
@@ -211,7 +214,11 @@ struct exersice_detail_view: View {
                     isAdd = false
                 }
                     }
-        }.foregroundColor(.black)
+        }
+        .onAppear{
+            selectedExersiceId = exersice.exersice_type.id
+        }
+        .foregroundColor(.black)
     }
         func cancel(){
             isNew = false

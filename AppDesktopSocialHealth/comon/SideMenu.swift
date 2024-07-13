@@ -62,6 +62,7 @@ struct SideMenu: View {
             }
             .padding(.leading, 20)
             .padding(.top,20)
+            Spacer()
         }
     }
 }

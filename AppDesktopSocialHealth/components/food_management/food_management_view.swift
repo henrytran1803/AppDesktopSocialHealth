@@ -178,27 +178,24 @@ struct GridRowFood: View {
                     edit()
                     
                 }, label: {
-                    RoundedRectangle(cornerRadius: 5)
-                        .frame(width: 50, height: 30)
-                        .overlay{
-                            Text("Sửa")
-                                .foregroundColor(.white)
-                        }
-                        .foregroundColor(.orange)
-                })
+                    Image("edit")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+        })
+        .buttonStyle(PlainButtonStyle())
                 Button(action: {
                     alertSureToDelete = true
                     selectedFood = food
                     
                 }, label: {
-                    RoundedRectangle(cornerRadius: 5)
-                        .frame(width: 50, height: 30)
-                        .overlay{
-                            Text("Xoá")
-                                .foregroundColor(.white)
-                        }
-                        .foregroundColor(.red)
-                })
+                    Image("delete")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+        })
+        .buttonStyle(PlainButtonStyle())
+        .padding(.leading)
             }.frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(.vertical, 5)

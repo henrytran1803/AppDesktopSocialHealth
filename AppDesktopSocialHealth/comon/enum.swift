@@ -70,6 +70,8 @@ enum API {
     case createListPhoto
     case updateFoodNonePhoto
     case updateExersiceNonePhoto
+    case dashBoard
+    case exType
     var path: String {
         switch self {
         case .register:
@@ -144,6 +146,10 @@ enum API {
             return "/v1/food"
         case .updateExersiceNonePhoto:
             return "/v1/exersice"
+        case .dashBoard:
+            return "/v1/account/dashboard"
+        case .exType :
+            return"/v1/exersice/type"
         }
     }
 
@@ -155,7 +161,7 @@ enum API {
             return "PUT"
         case .deleteFood, .deleteExercise, .deleteUser, .deleteMeal, .deleteMealDetail, .deletePost, .deleteLike, .deleteSchedule, .deleteScheduleDetail, .deleteConversation, .deleteMessage, .deleteReminder,.deletePhotoById:
             return "DELETE"
-        case .getListFood, .getFood, .getListExercise, .getExercise, .getAllUser, .getUser, .getMealsByUserId, .getMeal, .getAllPost, .getPost, .getAllComments, .getAllSchedule, .getSchedule, .listUserConversations, .listConversationMessages, .getReminder, .getRemindersByUserId:
+        case .getListFood, .getFood, .getListExercise, .getExercise, .getAllUser, .getUser, .getMealsByUserId, .getMeal, .getAllPost, .getPost, .getAllComments, .getAllSchedule, .getSchedule, .listUserConversations, .listConversationMessages, .getReminder, .getRemindersByUserId,.dashBoard,.exType:
             return "GET"
         }
     }

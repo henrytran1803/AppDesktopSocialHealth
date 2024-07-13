@@ -13,8 +13,29 @@ struct home_view: View {
     var body: some View {
         HStack{
             VStack{
+                Spacer()
+//                Button("Show Side Menu") {
+//                    let sideMenuWindow = NSWindow(
+//                        contentRect: NSRect(x: 0, y: 0, width: 200, height: 300),
+//                        styleMask: [.titled, .closable, .miniaturizable],
+//                        backing: .buffered,
+//                        defer: false
+//                    )
+//                    sideMenuWindow.title = "Side Menu"
+//                    
+//                    // Calculate the position relative to the main window
+//                    let mainWindowFrame = NSApplication.shared.mainWindow?.frame ?? NSRect(x: 0, y: 0, width: 800, height: 600) // Default size if no main window
+//                    let sideMenuPosition = NSPoint(x: mainWindowFrame.minX + 50, y: mainWindowFrame.maxY - 350) // Example positioning
+//                    
+//                    sideMenuWindow.contentView = NSHostingView(rootView: ContentView())
+//                    sideMenuWindow.makeKeyAndOrderFront(nil)
+//                    sideMenuWindow.setFrameOrigin(sideMenuPosition)
+//                }
+//                .padding()
+                
+                
                 RoundedRectangle(cornerRadius: 30)
-                    .frame(width: getRect().width / 9, height: getRect().height / 2.5 , alignment: .leading)
+                    .frame(width: getRect().width / 9, height: getRect().height - 200 , alignment: .leading)
                     .foregroundColor(.clear)
                     .background(
                         LinearGradient(
@@ -30,13 +51,11 @@ struct home_view: View {
                     }
                     .shadow(color: .gray.opacity(0.3), radius: 5, x: 5, y: 5  )
                 Spacer()
-//                Image("imagefit")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: getRect().width / 9)
+
             }.padding()
+            ///
             if currentTab == "Home" {
-                ws()
+                main_view()
             }else if currentTab == "Accounts" {
                 account_management_view()
             }else if currentTab == "Foods" {
@@ -54,5 +73,33 @@ struct home_view: View {
                 endPoint: .bottom
             ))
             .buttonStyle(PlainButtonStyle())
+    }
+}
+struct bar :View {
+    
+    @Binding var currentTab : String
+    @Binding var isLogin : Bool
+    var body: some View {
+        VStack{
+            Spacer()
+            RoundedRectangle(cornerRadius: 30)
+                .frame(width: getRect().width / 9, height: getRect().height - 200 , alignment: .leading)
+                .foregroundColor(.clear)
+                .background(
+                    LinearGradient(
+                        gradient: Gradient(colors: [ Color("\(currentTab).fill"), Color.undersidebar ]),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+                .cornerRadius(30)
+                .overlay {
+                    SideMenu(currentTab: $currentTab, isLogin: $isLogin)
+                    
+                }
+                .shadow(color: .gray.opacity(0.3), radius: 5, x: 5, y: 5  )
+            Spacer()
+
+        }
     }
 }

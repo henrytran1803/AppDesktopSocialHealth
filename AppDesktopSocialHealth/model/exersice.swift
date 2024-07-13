@@ -43,7 +43,7 @@ struct ExersiceUpdate : Codable {
     var time_serving:Int
     var exersice_type : Int
 }
-struct ExersiceType  : Codable{
+struct ExersiceType  : Codable, Identifiable{
     var id : Int
     var name : String
 }

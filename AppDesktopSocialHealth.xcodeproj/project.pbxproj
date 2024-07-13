@@ -31,13 +31,16 @@
 		D27FB5D82C41910B0059E72A /* custombutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27FB5D72C41910B0059E72A /* custombutton.swift */; };
 		D29EEF1A2C40157E00B26312 /* ws.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29EEF192C40157E00B26312 /* ws.swift */; };
 		D29EEF1D2C4015AC00B26312 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = D29EEF1C2C4015AC00B26312 /* Starscream */; };
-		D29EEF212C40164D00B26312 /* wss.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29EEF202C40164D00B26312 /* wss.swift */; };
 		D2B32AAD2C3840F9009E0C56 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B32AAC2C3840F9009E0C56 /* login.swift */; };
 		D2B32AAF2C38410E009E0C56 /* login_viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B32AAE2C38410E009E0C56 /* login_viewmodel.swift */; };
 		D2B32AB12C38414B009E0C56 /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B32AB02C38414B009E0C56 /* enum.swift */; };
 		D2E120552C3F65BF0009B128 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E120542C3F65BF0009B128 /* post.swift */; };
 		D2E120572C3F65CE0009B128 /* post_viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E120562C3F65CE0009B128 /* post_viewmodel.swift */; };
 		D2E120592C3F6AE50009B128 /* contentdetail_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E120582C3F6AE50009B128 /* contentdetail_view.swift */; };
+		D2E4736D2C420FBD00181D09 /* customshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4736C2C420FBD00181D09 /* customshow.swift */; };
+		D2E4736F2C4219C100181D09 /* dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4736E2C4219C100181D09 /* dashboard.swift */; };
+		D2E473712C421A4C00181D09 /* dashboard_viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E473702C421A4C00181D09 /* dashboard_viewmodel.swift */; };
+		D2E473732C42717400181D09 /* customselected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E473722C42717400181D09 /* customselected.swift */; };
 		D2EA70BB2C359AAD005CC9D1 /* AppDesktopSocialHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA70BA2C359AAD005CC9D1 /* AppDesktopSocialHealthApp.swift */; };
 		D2EA70BD2C359AAD005CC9D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA70BC2C359AAD005CC9D1 /* ContentView.swift */; };
 		D2EA70BF2C359AB2005CC9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2EA70BE2C359AB2005CC9D1 /* Assets.xcassets */; };
@@ -92,13 +95,16 @@
 		D27FB5D52C41827E0059E72A /* customtextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customtextfield.swift; sourceTree = "<group>"; };
 		D27FB5D72C41910B0059E72A /* custombutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custombutton.swift; sourceTree = "<group>"; };
 		D29EEF192C40157E00B26312 /* ws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ws.swift; sourceTree = "<group>"; };
-		D29EEF202C40164D00B26312 /* wss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wss.swift; sourceTree = "<group>"; };
 		D2B32AAC2C3840F9009E0C56 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		D2B32AAE2C38410E009E0C56 /* login_viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_viewmodel.swift; sourceTree = "<group>"; };
 		D2B32AB02C38414B009E0C56 /* enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
 		D2E120542C3F65BF0009B128 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		D2E120562C3F65CE0009B128 /* post_viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post_viewmodel.swift; sourceTree = "<group>"; };
 		D2E120582C3F6AE50009B128 /* contentdetail_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentdetail_view.swift; sourceTree = "<group>"; };
+		D2E4736C2C420FBD00181D09 /* customshow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customshow.swift; sourceTree = "<group>"; };
+		D2E4736E2C4219C100181D09 /* dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboard.swift; sourceTree = "<group>"; };
+		D2E473702C421A4C00181D09 /* dashboard_viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboard_viewmodel.swift; sourceTree = "<group>"; };
+		D2E473722C42717400181D09 /* customselected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customselected.swift; sourceTree = "<group>"; };
 		D2EA70B72C359AAD005CC9D1 /* AppDesktopSocialHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDesktopSocialHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EA70BA2C359AAD005CC9D1 /* AppDesktopSocialHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesktopSocialHealthApp.swift; sourceTree = "<group>"; };
 		D2EA70BC2C359AAD005CC9D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 				D201C2292C3A3C6200EE9C00 /* photo.swift */,
 				D2F134262C3E0E15000DB806 /* exersice.swift */,
 				D2E120542C3F65BF0009B128 /* post.swift */,
+				D2E4736E2C4219C100181D09 /* dashboard.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 				D201C2232C3A29E000EE9C00 /* image_viewmodel.swift */,
 				D2F134282C3E12B2000DB806 /* exersice_viewmodel.swift */,
 				D2E120562C3F65CE0009B128 /* post_viewmodel.swift */,
+				D2E473702C421A4C00181D09 /* dashboard_viewmodel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -188,6 +196,8 @@
 				D201C2252C3A2A3E00EE9C00 /* ImagePickerView.swift */,
 				D27FB5D52C41827E0059E72A /* customtextfield.swift */,
 				D27FB5D72C41910B0059E72A /* custombutton.swift */,
+				D2E4736C2C420FBD00181D09 /* customshow.swift */,
+				D2E473722C42717400181D09 /* customselected.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -269,7 +279,6 @@
 			children = (
 				D250F43E2C3694A300BC34F7 /* home_view.swift */,
 				D215781D2C38EACC00C52670 /* main_view.swift */,
-				D29EEF202C40164D00B26312 /* wss.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -484,10 +493,10 @@
 				D2B32AAD2C3840F9009E0C56 /* login.swift in Sources */,
 				D215781C2C38EA6800C52670 /* SideMenu.swift in Sources */,
 				D21578242C39563D00C52670 /* UserDetailView.swift in Sources */,
+				D2E473712C421A4C00181D09 /* dashboard_viewmodel.swift in Sources */,
 				D21578262C39A89200C52670 /* food.swift in Sources */,
 				D21578282C39A95300C52670 /* food_viewmodel.swift in Sources */,
 				D2F134272C3E0E15000DB806 /* exersice.swift in Sources */,
-				D29EEF212C40164D00B26312 /* wss.swift in Sources */,
 				D21578202C390D6B00C52670 /* user.swift in Sources */,
 				D2B32AAF2C38410E009E0C56 /* login_viewmodel.swift in Sources */,
 				D250F43F2C3694A300BC34F7 /* home_view.swift in Sources */,
@@ -499,6 +508,7 @@
 				D2E120572C3F65CE0009B128 /* post_viewmodel.swift in Sources */,
 				D201C2282C3A2E3A00EE9C00 /* fooddetail_view.swift in Sources */,
 				D201C2262C3A2A3E00EE9C00 /* ImagePickerView.swift in Sources */,
+				D2E4736D2C420FBD00181D09 /* customshow.swift in Sources */,
 				D201C2242C3A29E000EE9C00 /* image_viewmodel.swift in Sources */,
 				D250F4382C368B8400BC34F7 /* food_management_view.swift in Sources */,
 				D21578222C390DCA00C52670 /* user_viewmodel.swift in Sources */,
@@ -506,7 +516,9 @@
 				D250F4322C368B3A00BC34F7 /* login_view.swift in Sources */,
 				D2EA70BB2C359AAD005CC9D1 /* AppDesktopSocialHealthApp.swift in Sources */,
 				D215781E2C38EACC00C52670 /* main_view.swift in Sources */,
+				D2E4736F2C4219C100181D09 /* dashboard.swift in Sources */,
 				D250F43A2C368B9C00BC34F7 /* exersice_management_view.swift in Sources */,
+				D2E473732C42717400181D09 /* customselected.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

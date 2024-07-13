@@ -46,7 +46,6 @@ class FoodViewModel: ObservableObject {
                     completion(false)
                     return
                 }
-                print(String(data: data, encoding: .utf8) ?? "No data string")
                 do {
                     let foodResponse = try JSONDecoder().decode(FoodResponseData.self, from: data)
                     self.foods = foodResponse.data

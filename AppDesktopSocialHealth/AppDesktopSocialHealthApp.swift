@@ -13,5 +13,6 @@ struct AppDesktopSocialHealthApp: App {
         WindowGroup {
             ContentView()
         }
+       
     }
 }
