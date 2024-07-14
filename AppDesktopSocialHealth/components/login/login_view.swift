@@ -30,44 +30,35 @@ struct login_view: View {
                 VStack(alignment: .leading){
                     Text(NSLocalizedString("text.username", comment: ""))
                         .font(.title2)
-                        .foregroundColor(.text)
+                        .foregroundColor(.white)
                     TextField(NSLocalizedString("text.username", comment: ""), text: $login.login.email)
                         .textFieldStyle(.roundedBorder)
                         .frame(width: 300)
                     Text(NSLocalizedString("text.password", comment: ""))
                         .font(.title2)
-                        .foregroundColor(.text)
+                        .foregroundColor(.white)
                     SecureField(NSLocalizedString("text.password", comment: ""), text: $login.login.password)
                         .textFieldStyle(.roundedBorder)
                         .frame(width: 300)
                 }
-                Button(action: {
-                    if login.login.email.isEmpty || login.login.password.isEmpty {
-                        showAlertEmpty = true
-                    }else {
-                        login.login{successs in
-                            if successs{
-                                isLogin = true
-                            }else{
-                                print("\(login.errorMessage)")
-                                showAlert = true
+
+                
+                PrimaryButton(action: 
+                                {
+                                if login.login.email.isEmpty || login.login.password.isEmpty {
+                                    showAlertEmpty = true
+                                }else {
+                                    login.login{successs in
+                                        if successs{
+                                            isLogin = true
+                                        }else{
+                                            print("\(login.errorMessage)")
+                                            showAlert = true
+                                        }
+                                    }
+                                }
                             }
-                        }
-                    }
-                }, label: {
-                    
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 250, height: 50)
-                        .overlay{
-                            Text(NSLocalizedString("button.login", comment: ""))
-                                .font( .title)
-                                .foregroundStyle(.white)
-                        }
-                        .foregroundColor(Color.primaryy)
-                        .background(Color.background)
-                      
-                        
-                })
+                              , title: "ĐĂNG NHẬP")
                 .padding(.top, 50)
                 Spacer()
                     .alert(NSLocalizedString("error.login", comment: ""), isPresented: $showAlert) {
@@ -78,8 +69,14 @@ struct login_view: View {
                             }
             }
             Spacer()
-        }.frame(width: getRect().width / 1.3, height: getRect().height - 100 , alignment: .leading)
-            .background(Color.background.ignoresSafeArea())
+        }
+        .frame(width: getRect().width / 1.3, height: getRect().height - 100 , alignment: .leading)
+//            .background(Color.background.ignoresSafeArea())
+            .background(LinearGradient(
+                gradient: Gradient(colors: [Color.pink, Color.under ]),
+                startPoint: .top,
+                endPoint: .bottom
+            ).ignoresSafeArea())
     }
 }
 

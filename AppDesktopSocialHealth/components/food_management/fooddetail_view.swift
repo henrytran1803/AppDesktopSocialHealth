@@ -193,7 +193,7 @@ struct FoodDetailView: View {
                                         }
                                     } else {
                                         
-                                        
+                                        alertUpdateSuccess  = true
                                         print("no images selected")
                                     }
                                 }else {

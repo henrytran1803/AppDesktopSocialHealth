@@ -23,7 +23,7 @@ struct food_management_view: View {
                 ProgressView()
             } else {
                 HStack{
-                    Text("User List")
+                    Text("Food List")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -74,16 +74,16 @@ struct food_management_view: View {
                         .foregroundColor(.clear)
                 .padding([.top, .leading] )
                 .background(Color.clear)
-                    .navigationTitle("Users")
+                    .navigationTitle("Foods")
                     .searchable(text: $searchText, prompt: "Look for something")
                     .alert(NSLocalizedString("Are you sure to delete \(selectedFood.id)", comment: ""), isPresented: $alertSureToDelete) {
                         Button("OK", role: .destructive) {
                             model.DeleteFoodById(food:selectedFood ){
                                 sucess in
                                 if sucess {
-                                    alertDeleteSuccess = false
+                                    alertDeleteSuccess = true
                                 }else {
-                                    alertDeleteFail = false
+                                    alertDeleteFail = true
                                 }
                             }
                         }
@@ -94,7 +94,7 @@ struct food_management_view: View {
                             model.fetchAllFood() { _ in }
                         }
                     }
-                    .alert(NSLocalizedString("Delete fail", comment: ""), isPresented: $alertDeleteFail) {
+                    .alert(NSLocalizedString("Delete fail: món ăn vẫn đang tồn tại nơi khác không xoá được ", comment: ""), isPresented: $alertDeleteFail) {
                         Button("OK", role: .cancel) {
                             
                         }

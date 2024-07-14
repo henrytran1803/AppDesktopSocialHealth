@@ -43,8 +43,10 @@ struct main_view: View {
                            set: { modelDash.dashBoard.list_active = $0 }
                        ))
             }
-         
-        }.alert(NSLocalizedString("Gửi thông báo thành công", comment: ""), isPresented: $isSuccess) {
+            .navigationTitle("Dashboard")
+        }
+        
+        .alert(NSLocalizedString("Gửi thông báo thành công", comment: ""), isPresented: $isSuccess) {
             Button("OK", role: .cancel) {
               
             }

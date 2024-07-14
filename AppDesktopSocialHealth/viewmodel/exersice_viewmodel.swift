@@ -263,12 +263,10 @@ class ExersiceViewModel:ObservableObject{
             completion(false)
             return
         }
-        
         var request = URLRequest(url: url)
         request.httpMethod = API.deleteExercise(id: exersice.id).method
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-        
         let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
             DispatchQueue.main.async {
                 if let error = error {

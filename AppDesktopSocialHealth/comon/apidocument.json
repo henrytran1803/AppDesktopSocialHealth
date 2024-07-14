@@ -1,0 +1,1422 @@
+{
+    "info": {
+        "name": "Complete API Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET /ws",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/ws",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "ws"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /broadcast",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/broadcast",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "broadcast"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/account/register",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/account/register",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "account",
+                        "register"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/account/login",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/account/login",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "account",
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/account/requestpassword",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/account/requestpassword",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "account",
+                        "requestpassword"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/account/confirmpassword",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/account/confirmpassword",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "account",
+                        "confirmpassword"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/account/dashboard",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/account/dashboard",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "account",
+                        "dashboard"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/food",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/food",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "food"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/food/:id",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/food/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "food",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/food",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/food",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "food"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/food/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/food/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "food",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/food",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/food",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "food"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/food/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/food/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "food",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/food/photo/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/food/photo/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "food",
+                        "photo",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/food/photo",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/food/photo",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "food",
+                        "photo"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/food/photos",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/food/photos",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "food",
+                        "photos"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/exercise",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/exercise",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "exercise"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/exercise/:id",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/exercise/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "exercise",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/exercise/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/exercise/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "exercise",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/exercise",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/exercise",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "exercise"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/exercise/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/exercise/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "exercise",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/exercise",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/exercise",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "exercise"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/exercise/type",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/exercise/type",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "exercise",
+                        "type"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/user",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/user",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "user"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/user/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/user/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "user",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/user",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/user",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "user"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/user/:id",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/user/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "user",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/user/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/user/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "user",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/user/password",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/user/password",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "user",
+                        "password"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/meal",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/meal",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "meal"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/meal/user/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/meal/user/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "meal",
+                        "user",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/meal/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/meal/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "meal",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/meal/detail",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/meal/detail",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "meal",
+                        "detail"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/meal/detail",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/meal/detail",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "meal",
+                        "detail"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/meal/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/meal/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "meal",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/meal/detail/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/meal/detail/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "meal",
+                        "detail",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/content",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/content",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "content"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/content/like",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/content/like",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "content",
+                        "like"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/content/like",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/content/like",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "content",
+                        "like"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/content/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/content/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "content",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/content/comment",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/content/comment",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "content",
+                        "comment"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/content/:id",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/content/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "content",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/content/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/content/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "content",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/content",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/content",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "content"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/content/comment/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/content/comment/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "content",
+                        "comment",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/schedule",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/schedule",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "schedule"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/schedule/detail",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/schedule/detail",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "schedule",
+                        "detail"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/schedule",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/schedule",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "schedule"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/schedule/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/schedule/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "schedule",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/schedule",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/schedule",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "schedule"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/schedule/detail",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/schedule/detail",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "schedule",
+                        "detail"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/schedule/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/schedule/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "schedule",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/schedule/detail/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/schedule/detail/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "schedule",
+                        "detail",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/conversation",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/conversation",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "conversation"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/conversation/messages",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/conversation/messages",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "conversation",
+                        "messages"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/conversation/users/:user_id/conversations",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/conversation/users/:user_id/conversations",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "conversation",
+                        "users",
+                        ":user_id",
+                        "conversations"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/conversation/:conversation_id/messages",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/conversation/:conversation_id/messages",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "conversation",
+                        ":conversation_id",
+                        "messages"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST /v1/reminder",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/reminder",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "reminder"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "PUT /v1/reminder",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/reminder",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "reminder"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/reminder/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/reminder/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "reminder",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE /v1/reminder/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/reminder/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "reminder",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /v1/reminder/user/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "/v1/reminder/user/:id",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "v1",
+                        "reminder",
+                        "user",
+                        ":id"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

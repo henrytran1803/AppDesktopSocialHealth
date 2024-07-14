@@ -103,7 +103,7 @@ struct exersice_detail_view: View {
                         }
                     }
                     ImagePickerView(viewModel: modelImage)
-                }
+                }.padding()
           
             
             HStack{
@@ -154,7 +154,7 @@ struct exersice_detail_view: View {
                                 if success {
                                     if modelImage.selectedImages.count == 1 {
                                         if let imageData = modelImage.selectedImages[0].tiffRepresentation {
-                                            let photo = PhotoBase(photo_type: "1", image: imageData, url: "", dish_id: "\(exersice.id)")
+                                            let photo = PhotoBase(photo_type: "1", image: imageData, url: "", exersice_id: "\(exersice.id)")
                                             
                                             modelImage.createPhoto(photo: photo) { success in
                                                 if success {
@@ -171,7 +171,7 @@ struct exersice_detail_view: View {
                                         
                                         for selectedImage in modelImage.selectedImages {
                                             if let imageData = selectedImage.tiffRepresentation {
-                                                let photo = PhotoBase(photo_type: "1", image: imageData, url: "", dish_id: "\(exersice.id)")
+                                                let photo = PhotoBase(photo_type: "1", image: imageData, url: "", exersice_id: "\(exersice.id)")
                                                 photos.append(photo)
                                             } else {
                                                 alertCreatefail = true

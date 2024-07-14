@@ -82,9 +82,9 @@ struct exersice_management_view: View {
                             model.deleteExersice(exersice: selectedExersice){
                                 sucess in
                                 if sucess {
-                                    alertDeleteSuccess = false
+                                    alertDeleteSuccess = true
                                 }else {
-                                    alertDeleteFail = false
+                                    alertDeleteFail = true
                                 }
                             }
                         }
@@ -94,7 +94,7 @@ struct exersice_management_view: View {
 
                         }
                     }
-                    .alert(NSLocalizedString("Delete fail", comment: ""), isPresented: $alertDeleteFail) {
+                    .alert(NSLocalizedString("Delete fail:Có vẻ như nó đang được sử dụng ở nơi khác ", comment: ""), isPresented: $alertDeleteFail) {
                         Button("OK", role: .cancel) {
                             
                         }
