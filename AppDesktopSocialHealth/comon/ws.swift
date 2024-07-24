@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Starscream
+//import Starscream
 struct wssend: Codable{
     var message :String
 }

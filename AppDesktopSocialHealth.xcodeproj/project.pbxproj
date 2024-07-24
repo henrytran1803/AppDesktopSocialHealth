@@ -30,7 +30,6 @@
 		D27FB5D62C41827E0059E72A /* customtextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27FB5D52C41827E0059E72A /* customtextfield.swift */; };
 		D27FB5D82C41910B0059E72A /* custombutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27FB5D72C41910B0059E72A /* custombutton.swift */; };
 		D29EEF1A2C40157E00B26312 /* ws.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29EEF192C40157E00B26312 /* ws.swift */; };
-		D29EEF1D2C4015AC00B26312 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = D29EEF1C2C4015AC00B26312 /* Starscream */; };
 		D2B32AAD2C3840F9009E0C56 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B32AAC2C3840F9009E0C56 /* login.swift */; };
 		D2B32AAF2C38410E009E0C56 /* login_viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B32AAE2C38410E009E0C56 /* login_viewmodel.swift */; };
 		D2B32AB12C38414B009E0C56 /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B32AB02C38414B009E0C56 /* enum.swift */; };
@@ -52,17 +51,6 @@
 		D2F134292C3E12B2000DB806 /* exersice_viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F134282C3E12B2000DB806 /* exersice_viewmodel.swift */; };
 		D2F1342B2C3E695B000DB806 /* exersice_detail_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1342A2C3E695B000DB806 /* exersice_detail_view.swift */; };
 		D2FA2A7F2C43BDF600FDEEDC /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A7E2C43BDF600FDEEDC /* Readme.md */; };
-		D2FA2A8B2C43BE1700FDEEDC /* post_detail.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A812C43BE1500FDEEDC /* post_detail.png */; };
-		D2FA2A8C2C43BE1700FDEEDC /* user_detail.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A822C43BE1600FDEEDC /* user_detail.png */; };
-		D2FA2A8D2C43BE1700FDEEDC /* post.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A832C43BE1600FDEEDC /* post.png */; };
-		D2FA2A8E2C43BE1700FDEEDC /* exersice.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A842C43BE1600FDEEDC /* exersice.png */; };
-		D2FA2A8F2C43BE1700FDEEDC /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A852C43BE1600FDEEDC /* login.png */; };
-		D2FA2A902C43BE1700FDEEDC /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A862C43BE1600FDEEDC /* dashboard.png */; };
-		D2FA2A912C43BE1700FDEEDC /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A872C43BE1700FDEEDC /* food.png */; };
-		D2FA2A922C43BE1700FDEEDC /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A882C43BE1700FDEEDC /* user.png */; };
-		D2FA2A932C43BE1700FDEEDC /* food_detail.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A892C43BE1700FDEEDC /* food_detail.png */; };
-		D2FA2A942C43BE1700FDEEDC /* exersice_detail.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A8A2C43BE1700FDEEDC /* exersice_detail.png */; };
-		D2FA2A962C43C16400FDEEDC /* structure.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A952C43C16400FDEEDC /* structure.png */; };
 		D2FA2A982C43C31200FDEEDC /* apidocument.json in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A972C43C31200FDEEDC /* apidocument.json */; };
 		D2FA2A9A2C43C32300FDEEDC /* API documentation.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = D2FA2A992C43C32200FDEEDC /* API documentation.postman_collection.json */; };
 /* End PBXBuildFile section */
@@ -134,17 +122,6 @@
 		D2F134282C3E12B2000DB806 /* exersice_viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exersice_viewmodel.swift; sourceTree = "<group>"; };
 		D2F1342A2C3E695B000DB806 /* exersice_detail_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exersice_detail_view.swift; sourceTree = "<group>"; };
 		D2FA2A7E2C43BDF600FDEEDC /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		D2FA2A812C43BE1500FDEEDC /* post_detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post_detail.png; sourceTree = "<group>"; };
-		D2FA2A822C43BE1600FDEEDC /* user_detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_detail.png; sourceTree = "<group>"; };
-		D2FA2A832C43BE1600FDEEDC /* post.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post.png; sourceTree = "<group>"; };
-		D2FA2A842C43BE1600FDEEDC /* exersice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exersice.png; sourceTree = "<group>"; };
-		D2FA2A852C43BE1600FDEEDC /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
-		D2FA2A862C43BE1600FDEEDC /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard.png; sourceTree = "<group>"; };
-		D2FA2A872C43BE1700FDEEDC /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
-		D2FA2A882C43BE1700FDEEDC /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
-		D2FA2A892C43BE1700FDEEDC /* food_detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_detail.png; sourceTree = "<group>"; };
-		D2FA2A8A2C43BE1700FDEEDC /* exersice_detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exersice_detail.png; sourceTree = "<group>"; };
-		D2FA2A952C43C16400FDEEDC /* structure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = structure.png; sourceTree = "<group>"; };
 		D2FA2A972C43C31200FDEEDC /* apidocument.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apidocument.json; sourceTree = "<group>"; };
 		D2FA2A992C43C32200FDEEDC /* API documentation.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "API documentation.postman_collection.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D29EEF1D2C4015AC00B26312 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +292,6 @@
 		D2EA70AE2C359AAD005CC9D1 = {
 			isa = PBXGroup;
 			children = (
-				D2FA2A802C43BDFD00FDEEDC /* images */,
 				D2FA2A7E2C43BDF600FDEEDC /* Readme.md */,
 				D2EA70B92C359AAD005CC9D1 /* AppDesktopSocialHealth */,
 				D2EA70CB2C359AB3005CC9D1 /* AppDesktopSocialHealthTests */,
@@ -376,24 +351,6 @@
 			path = AppDesktopSocialHealthUITests;
 			sourceTree = "<group>";
 		};
-		D2FA2A802C43BDFD00FDEEDC /* images */ = {
-			isa = PBXGroup;
-			children = (
-				D2FA2A952C43C16400FDEEDC /* structure.png */,
-				D2FA2A852C43BE1600FDEEDC /* login.png */,
-				D2FA2A862C43BE1600FDEEDC /* dashboard.png */,
-				D2FA2A882C43BE1700FDEEDC /* user.png */,
-				D2FA2A822C43BE1600FDEEDC /* user_detail.png */,
-				D2FA2A872C43BE1700FDEEDC /* food.png */,
-				D2FA2A892C43BE1700FDEEDC /* food_detail.png */,
-				D2FA2A842C43BE1600FDEEDC /* exersice.png */,
-				D2FA2A8A2C43BE1700FDEEDC /* exersice_detail.png */,
-				D2FA2A832C43BE1600FDEEDC /* post.png */,
-				D2FA2A812C43BE1500FDEEDC /* post_detail.png */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,7 +368,6 @@
 			);
 			name = AppDesktopSocialHealth;
 			packageProductDependencies = (
-				D29EEF1C2C4015AC00B26312 /* Starscream */,
 			);
 			productName = AppDesktopSocialHealth;
 			productReference = D2EA70B72C359AAD005CC9D1 /* AppDesktopSocialHealth.app */;
@@ -487,7 +443,6 @@
 			);
 			mainGroup = D2EA70AE2C359AAD005CC9D1;
 			packageReferences = (
-				D29EEF1B2C4015AB00B26312 /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
 			productRefGroup = D2EA70B82C359AAD005CC9D1 /* Products */;
 			projectDirPath = "";
@@ -507,20 +462,9 @@
 			files = (
 				D2EA70C22C359AB2005CC9D1 /* Preview Assets.xcassets in Resources */,
 				D2FA2A982C43C31200FDEEDC /* apidocument.json in Resources */,
-				D2FA2A962C43C16400FDEEDC /* structure.png in Resources */,
-				D2FA2A912C43BE1700FDEEDC /* food.png in Resources */,
-				D2FA2A932C43BE1700FDEEDC /* food_detail.png in Resources */,
-				D2FA2A8C2C43BE1700FDEEDC /* user_detail.png in Resources */,
 				D250F4262C36521C00BC34F7 /* Localizable.strings in Resources */,
-				D2FA2A922C43BE1700FDEEDC /* user.png in Resources */,
 				D2FA2A7F2C43BDF600FDEEDC /* Readme.md in Resources */,
-				D2FA2A8D2C43BE1700FDEEDC /* post.png in Resources */,
-				D2FA2A902C43BE1700FDEEDC /* dashboard.png in Resources */,
-				D2FA2A8E2C43BE1700FDEEDC /* exersice.png in Resources */,
 				D2FA2A9A2C43C32300FDEEDC /* API documentation.postman_collection.json in Resources */,
-				D2FA2A942C43BE1700FDEEDC /* exersice_detail.png in Resources */,
-				D2FA2A8B2C43BE1700FDEEDC /* post_detail.png in Resources */,
-				D2FA2A8F2C43BE1700FDEEDC /* login.png in Resources */,
 				D2EA70BF2C359AB2005CC9D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -756,7 +700,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = AppDesktopSocialHealth/AppDesktopSocialHealth.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -774,6 +719,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.AppDesktopSocialHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -786,7 +732,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = AppDesktopSocialHealth/AppDesktopSocialHealth.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -804,6 +751,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.AppDesktopSocialHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -921,25 +869,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D29EEF1B2C4015AB00B26312 /* XCRemoteSwiftPackageReference "Starscream" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/daltoniam/Starscream";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.8;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D29EEF1C2C4015AC00B26312 /* Starscream */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D29EEF1B2C4015AB00B26312 /* XCRemoteSwiftPackageReference "Starscream" */;
-			productName = Starscream;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2EA70AF2C359AAD005CC9D1 /* Project object */;
 }
