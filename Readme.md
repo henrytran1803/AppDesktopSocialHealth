@@ -92,18 +92,18 @@ SocialHealth Admin Desktop Application là một ứng dụng quản lý cho n�
 
 ## Hình ảnh sản phẩm
 ### Giao diện Đăng nhập
-![Image 1](images/login.png)
+![Image 1](AppDesktopSocialHealth/images/login.png)
 ### Giao diện Dashboard
-![Image 1](images/dashboard.png)
+![Image 1](AppDesktopSocialHealth/images/dashboard.png)
 ### Giao diện Quản lý người dùng
-![Image 1](images/user.png)
-![Image 1](images/user_detail.png)
+![Image 1](AppDesktopSocialHealth/images/user.png)
+![Image 1](AppDesktopSocialHealth/images/user_detail.png)
 ### Giao diện Quản lý món ăn
-![Image 1](images/food.png)
-![Image 1](images/food_detail.png)
+![Image 1](AppDesktopSocialHealth/images/food.png)
+![Image 1](AppDesktopSocialHealth/images/food_detail.png)
 ### Giao diện Quản lý bài tập
-![Image 1](images/exersice.png)
-![Image 1](images/exersice_detail.png)
+![Image 1](AppDesktopSocialHealth/images/exersice.png)
+![Image 1](AppDesktopSocialHealth/images/exersice_detail.png)
 ### Giao diện Quản lý bài đăng
-![Image 1](images/post.png)
-![Image 1](images/post_detail.png)
+![Image 1](AppDesktopSocialHealth/images/post.png)
+![Image 1](AppDesktopSocialHealth/images/post_detail.png)
