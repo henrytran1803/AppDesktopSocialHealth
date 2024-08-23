@@ -145,7 +145,7 @@ enum API {
         case .updateFoodNonePhoto:
             return "/v1/food"
         case .updateExersiceNonePhoto:
-            return "/v1/exersice"
+            return "/v1/exersice/photo"
         case .dashBoard:
             return "/v1/account/dashboard"
         case .exType :

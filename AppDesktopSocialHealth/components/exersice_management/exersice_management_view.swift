@@ -60,7 +60,9 @@ struct exersice_management_view: View {
                                 }else if !isNew && isAdd {
                                     exersice_detail_view(exersice: selectedExersice, isNew: $isNew, isAdd:$isAdd, model: model)
                                 }else{
-                                    exersiceGrid
+                                    ScrollView {
+                                        exersiceGrid
+                                    }
                                         .padding()
                                 Divider()
                                     .font(.title2)
@@ -170,7 +172,8 @@ struct GridRowExersice: View {
             Text(exersice.name)
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            Text("\(exersice.calorie)")
+            
+            Text("\(exersice.calorie, specifier: "%.2f")")
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text("\(exersice.exersice_type.name)")

@@ -73,9 +73,11 @@ struct account_management_view: View {
                                     }
                             }else{
                                 Divider()
-                                userGrid
-                                    .font(.title2)
-                                    .padding()
+                                ScrollView {
+                                    userGrid
+                                        .font(.title2)
+                                        .padding()
+                                }
                                 Spacer()
                             }
                         }

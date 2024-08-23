@@ -12,6 +12,7 @@ struct Login_model:Codable {
 }
 struct ResponseData: Codable {
     var id: Int
+    var role:Int 
     var token: String
 }
 

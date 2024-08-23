@@ -75,6 +75,14 @@ struct FoodDetailView: View {
                   
                 }.padding()
                 VStack {
+                    CustomTextField(text: Binding(
+                        get: { "\(food.sugar)" },
+                        set: { food.sugar = Double($0) ?? 0 }
+                    ), placeholder: "sugar")
+                    
+                  
+                }.padding()
+                VStack {
                     HStack {
                         CustomTextField(text: Binding(
                             get: { "\(food.serving)" },
@@ -157,6 +165,7 @@ struct FoodDetailView: View {
                             model.FoodUpdate(food: FoodUpdate(id: food.id, name: food.name, description: food.description, calorie: food.calorie, protein: food.protein, fat: food.fat, carb: food.carb, sugar: food.sugar, serving: food.serving)){
                                 success in
                                 if success {
+                                    
                                     if modelImage.selectedImages.count == 1 {
                                         if let imageData = modelImage.selectedImages[0].tiffRepresentation {
                                             let photo = PhotoBase(photo_type: "1", image: imageData, url: "", dish_id: "\(food.id)")
@@ -192,18 +201,17 @@ struct FoodDetailView: View {
                                             }
                                         }
                                     } else {
-                                        
-                                        alertUpdateSuccess  = true
+                                        alertCreateSuccess  = true
                                         print("no images selected")
                                     }
                                 }else {
+                                    print("here")
                                     alertCantUpdate = true
                                 }
-                                
                             }
                         }
                     }
-                }, title: isAdd ? "EDIT": "ADD")
+                }, title: isNew ? "ADD": "EDIT")
             }
             .alert(NSLocalizedString("error.empty", comment: ""), isPresented: $alertEmpty) {
                         Button("OK", role: .cancel) { }
@@ -211,11 +219,16 @@ struct FoodDetailView: View {
             .alert(NSLocalizedString("Fail", comment: ""), isPresented: $alertCreatefail) {
                         Button("OK", role: .cancel) { }
                     }
-                .alert(NSLocalizedString("Sucess", comment: ""), isPresented: $alertCreateSuccess) {
+            .alert(NSLocalizedString("Sucess", comment: ""), isPresented: $alertCreateSuccess) {
                 Button("OK", role: .destructive) {   isNew = false
                     isAdd = false
                 }
-                    }
+            }
+                .alert(NSLocalizedString("Thất bại, Thức ăn này đang được sử dụng", comment: ""), isPresented: $alertCantUpdate) {
+                Button("OK", role: .destructive) {   isNew = false
+                    isAdd = false
+                }
+            }
         }.foregroundColor(.black)
     }
         func cancel(){

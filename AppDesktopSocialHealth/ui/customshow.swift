@@ -76,7 +76,6 @@ struct LabeldashboardUsercustom : View{
             .cornerRadius(30)
             .overlay {
                 VStack(alignment: .leading){
-                    ScrollView {
                         ForEach(active,id: \.id_user){user in
                             HStack(){
                                 Text("•")
@@ -93,7 +92,6 @@ struct LabeldashboardUsercustom : View{
                                 
                             }
                         }
-                    }
                     .foregroundColor(.clear)
                     .padding()
                 }

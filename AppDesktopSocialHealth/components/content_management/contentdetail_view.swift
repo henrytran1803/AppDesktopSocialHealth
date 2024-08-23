@@ -63,6 +63,7 @@ struct contentdetail_view: View {
                 .padding()
             }
         }.foregroundColor( .black)
+            .padding()
     }
 }
 

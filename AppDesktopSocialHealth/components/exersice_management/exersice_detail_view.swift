@@ -189,7 +189,7 @@ struct exersice_detail_view: View {
                                         }
                                     } else {
                                         
-                                        
+                                        alertCreateSuccess = true
                                         print("no images selected")
                                     }
                                 }else {
@@ -200,8 +200,6 @@ struct exersice_detail_view: View {
                         }
                     }
                 }, title: isNew ? "ADD": "EDIT")
-                
-                
             }
             .alert(NSLocalizedString("error.empty", comment: ""), isPresented: $alertEmpty) {
                         Button("OK", role: .cancel) { }
@@ -210,6 +208,12 @@ struct exersice_detail_view: View {
                         Button("OK", role: .cancel) { }
                     }
                 .alert(NSLocalizedString("Sucess", comment: ""), isPresented: $alertCreateSuccess) {
+                Button("OK", role: .destructive) {   isNew = false
+                    isAdd = false
+                }
+                    }
+            
+                .alert(NSLocalizedString("Thất bại bài tập đang tồn tại ở đâu đó hoặc đang được sử dụng", comment: ""), isPresented: $alertCantUpdate) {
                 Button("OK", role: .destructive) {   isNew = false
                     isAdd = false
                 }

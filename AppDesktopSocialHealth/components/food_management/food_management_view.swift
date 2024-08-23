@@ -134,7 +134,6 @@ struct food_management_view: View {
             Divider()
             
             ForEach(filteredFoods, id: \.id) { food in
-                
                 GridRowFood(food: food, selectedFood: $selectedFood, isNew: $isNew, isAdd: $isAdd,alertSureToDelete: $alertSureToDelete)
                     .cornerRadius(8)
             }
@@ -165,7 +164,7 @@ struct GridRowFood: View {
             Text(food.name)
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            Text("\(food.calorie)")
+            Text("\(food.calorie, specifier: "%.2f")")
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text("\(food.serving)")

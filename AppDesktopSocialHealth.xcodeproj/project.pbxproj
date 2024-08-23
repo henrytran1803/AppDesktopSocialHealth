@@ -118,6 +118,7 @@
 		D2EA70D22C359AB3005CC9D1 /* AppDesktopSocialHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppDesktopSocialHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EA70D62C359AB3005CC9D1 /* AppDesktopSocialHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesktopSocialHealthUITests.swift; sourceTree = "<group>"; };
 		D2EA70D82C359AB3005CC9D1 /* AppDesktopSocialHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesktopSocialHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2ECE2D42C533922007E88A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D2F134262C3E0E15000DB806 /* exersice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exersice.swift; sourceTree = "<group>"; };
 		D2F134282C3E12B2000DB806 /* exersice_viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exersice_viewmodel.swift; sourceTree = "<group>"; };
 		D2F1342A2C3E695B000DB806 /* exersice_detail_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exersice_detail_view.swift; sourceTree = "<group>"; };
@@ -313,6 +314,7 @@
 		D2EA70B92C359AAD005CC9D1 /* AppDesktopSocialHealth */ = {
 			isa = PBXGroup;
 			children = (
+				D2ECE2D42C533922007E88A1 /* Info.plist */,
 				D2EA70C32C359AB2005CC9D1 /* AppDesktopSocialHealth.entitlements */,
 				D250F4222C364B6C00BC34F7 /* comon */,
 				D250F4212C364B6600BC34F7 /* ui */,
@@ -710,6 +712,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppDesktopSocialHealth/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -742,6 +745,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppDesktopSocialHealth/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
